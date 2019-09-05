@@ -24,3 +24,14 @@ function App() {
       setBalls(balls+1);
     }
   };
+  const scoreFoul = () => {
+    if (strikes !== 2) {
+      setStrikes(strikes+1);
+    }
+  };
+  const scoreHit = () => {
+    setStrikes(0);
+    setBalls(0);
+  };
+  return (
+    <div className="App"></div>

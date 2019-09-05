@@ -7,7 +7,7 @@ describe('<App />', () => {
   it('renders without crashing', () => {
     render(<App />);
   });
-  it('One Big Test', () => {
+  it('My test', () => {
     const {getByText} = render(<App />);
     const strike = getByText(/^strike$/i);
     const ball = getByText(/^ball$/i);
@@ -17,3 +17,7 @@ describe('<App />', () => {
     fireEvent.click(strike);
     fireEvent.click(strike);
     getByText(/Strikes: 2/);
+
+  });
+
+});
