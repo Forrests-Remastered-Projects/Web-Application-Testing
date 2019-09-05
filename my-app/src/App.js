@@ -34,4 +34,14 @@ function App() {
     setBalls(0);
   };
   return (
-    <div className="App"></div>
+    <div className="App">
+      <Display strikes={strikes} balls={balls} />
+      <Controls strike={scoreStrike}
+                ball={scoreBall}
+                foul={scoreFoul}
+                hit={scoreHit} />
+    </div>
+  );
+}
+
+export default App;
